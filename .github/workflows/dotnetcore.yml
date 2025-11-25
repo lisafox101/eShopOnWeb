@@ -1,7 +1,7 @@
 name: eShopOnWeb Build and Test
 
-#Triggers (uncomment line below to use it)
-#on: [push, pull_request, workflow_dispatch]
+# Triggers (uncomment if needed)
+# on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
@@ -9,6 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v5
         with:
